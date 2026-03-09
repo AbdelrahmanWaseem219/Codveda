@@ -117,3 +117,28 @@ text-align:center;
   font-family: "Montserrat", sans-serif;
   line-height: 30px;
 }
+
+
+.getstarted {
+  background-image: linear-gradient(to right, #003973 0%, #E5E5BE 51%, #003973 100%);
+}
+
+.getstarted {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  border: none;
+}
+
+.getstarted:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
