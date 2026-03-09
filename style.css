@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
   background: linear-gradient(to right, #0d0d0d 0%, #330867 100%);
   background-size: 200% 200%;
-  animation: gradientMove 10s ease infinite;  
-  margin: 0;  
+  animation: gradientMove 10s ease infinite;
+  margin: 0;
   overflow-x: hidden;
 }
 
@@ -100,17 +100,17 @@ h2 {
   line-height: 80px;
 }
 .highlight {
-  background:linear-gradient(90deg,#00e0ff,#00ffa6);
- -webkit-background-clip:text;
- -webkit-text-fill-color:transparent;
+  background: linear-gradient(90deg, #00e0ff, #00ffa6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.hero__section{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
+.hero__section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .hero__section p {
   font-weight: bold;
@@ -120,9 +120,13 @@ text-align:center;
   line-height: 30px;
 }
 
-
 .getstarted {
-  background-image: linear-gradient(to right, #003973 0%, #E5E5BE 51%, #003973 100%);
+  background-image: linear-gradient(
+    to right,
+    #003973 0%,
+    #e5e5be 51%,
+    #003973 100%
+  );
 }
 
 .getstarted {
