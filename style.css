@@ -5,7 +5,9 @@ html{
 body {
   background: linear-gradient(to right, #0d0d0d 0%, #330867 100%);
   background-size: 200% 200%;
-  animation: gradientMove 10s ease infinite;
+  animation: gradientMove 10s ease infinite;  
+  margin: 0;  
+  overflow-x: hidden;
 }
 
 @keyframes gradientMove {
@@ -103,7 +105,7 @@ h2 {
  -webkit-text-fill-color:transparent;
 }
 .hero__section{
-  height:100vh;
+height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
