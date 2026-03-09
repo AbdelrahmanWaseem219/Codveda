@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
-
+html{
+  scroll-behavior: smooth;
+}
 body {
-  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  background: linear-gradient(to right, #0d0d0d 0%, #330867 100%);
   background-size: 200% 200%;
   animation: gradientMove 10s ease infinite;
 }
@@ -86,10 +88,32 @@ header {
   text-decoration: none;
 }
 
-h1 {
+h1,
+h2 {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
   color: #f8f5f5;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Montserrat", sans-serif;
+  line-height: 80px;
+}
+.highlight {
+  background:linear-gradient(90deg,#00e0ff,#00ffa6);
+ -webkit-background-clip:text;
+ -webkit-text-fill-color:transparent;
+}
+.hero__section{
+  height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+.hero__section p {
+  font-weight: bold;
+  text-align: center;
+  color: #f8f5f5;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
 }
