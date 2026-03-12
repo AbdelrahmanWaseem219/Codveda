@@ -3,11 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: linear-gradient(to right, #0d0d0d 0%, #330867 100%);
-  background-size: 200% 200%;
-  animation: gradientMove 10s ease infinite;
-  margin: 0;
-  overflow-x: hidden;
+  background-image: url(Images/mario-gogh-VBLHICVh-lI-unsplash\ \(1\).jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @keyframes gradientMove {
@@ -62,16 +61,21 @@ header {
 }
 
 .nav__links li a:hover {
-  color: #0088a9;
+  color: #a97100;
+}
+
+.text {
+  margin-bottom: 200px;
 }
 .btn-grad {
   background-image: linear-gradient(
     to right,
-    #314755 0%,
-    #26a0da 51%,
-    #314755 100%
+    #403b4a 0%,
+    #e7e9bb 51%,
+    #403b4a 100%
   );
 }
+
 .btn-grad {
   margin: 10px;
   padding: 15px 45px;
@@ -102,14 +106,15 @@ h2 {
   line-height: 80px;
 }
 .highlight {
-  background: linear-gradient(90deg, #00e0ff, #00ffa6);
+  background: linear-gradient(90deg, #6e561d, #dba207);
   -webkit-background-clip: text;
+  background-clip: none;
   -webkit-text-fill-color: transparent;
   margin-left: 10px;
 }
 .hero__section {
   animation: fadeUp 2s ease;
-  height: 200vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,15 +142,14 @@ h2 {
 .getstarted {
   background-image: linear-gradient(
     to right,
-    #003973 0%,
-    #e5e5be 51%,
-    #003973 100%
+    #403b4a 0%,
+    #e7e9bb 51%,
+    #403b4a 100%
   );
 }
 
 .getstarted {
   margin: 10px;
-  margin-top: 20px;
   padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
@@ -156,6 +160,7 @@ h2 {
   display: block;
   outline: none;
   border: none;
+  transform: translateY(-200px);
 }
 
 .getstarted:hover {
@@ -163,13 +168,28 @@ h2 {
   color: #fff;
   text-decoration: none;
 }
-
-.hero__images{
-  display: flex;
-  align-items: center;
-  gap: 40px;
+@media (max-width: 830px) {
+  h1,
+  h2 {
+    font-size: 35px;
+  }
 }
 
-.hero__images img{
-  transform: translateY(-250px);
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  width: 200px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 50px;
+  margin-bottom: 50px;
 }
