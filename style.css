@@ -165,20 +165,16 @@ h2 {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  gap: 3rem;
+  gap: 5rem;
   flex-wrap: wrap;
   max-width: 100%;
+  margin-bottom: 150px;
 }
-.assets-icon {
-  width: 75%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 15px;
-  margin: 200px auto 0 auto;
-  display: block;
-}
+
 .icon {
-  width: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 300px;
   height: 180px;
   object-fit: cover;
   border-radius: 15px;
@@ -193,7 +189,7 @@ h3 {
 }
 
 .feat-header {
-  animation: slide-in 2s ease-out forwards;
+  animation: fadeUp 2s ease;
   display: block;
   background: linear-gradient(90deg, #5d5e3645, #c67700);
   padding: 20px 40px;
@@ -204,16 +200,13 @@ h3 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 40px;
+  margin-top: 150px;
 }
 
-@keyframes slide-in {
-  from {
-    transform: translateX(-100vw);
-  }
-
-  to {
-    transform: translate(0,150px);
-  }
+.icon:hover,
+.assets-icon:hover{
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 30px rgb(125, 71, 9);
 }
 
 /* Phones */
