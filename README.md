@@ -4,22 +4,19 @@ The website includes a hero section, navigation bar, feature cards, and responsi
 
 ## Features
 
-* Responsive navigation bar
-* Hero section with background image
-* Feature cards layout
-* Smooth scrolling
-* Modern UI design
-
-
+- Responsive navigation bar
+- Hero section with background image
+- Feature cards layout
+- Smooth scrolling
+- Modern UI design
 
 ## Technologies Used
 
-* HTML5
-* CSS3
-* Flexbox
-* Responsive Design
-* Google Fonts
-
+- HTML5
+- CSS3
+- Flexbox
+- Responsive Design
+- Google Fonts
 
 ## How to Run
 
