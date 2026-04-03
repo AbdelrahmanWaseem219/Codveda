@@ -24,11 +24,12 @@ header {
   align-items: center;
   padding: 10px 10%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  background: transparent;
 }
 
 .logo {
   cursor: pointer;
+  width: 120px;
+  height: 50px; 
 }
 
 .nav__links {
@@ -160,7 +161,7 @@ h2 {
   text-decoration: none;
 }
 
-.features {
+.features__section {
   animation: fadeUp 2s ease;
   display: flex;
   justify-content: center;
@@ -171,7 +172,11 @@ h2 {
   margin-bottom: 150px;
 }
 
-.icon {
+.feat-card {
+  text-align: center;
+}
+
+.feat-icon {
   transition: all 0.3s ease;
   cursor: pointer;
   width: 300px;
@@ -179,6 +184,7 @@ h2 {
   object-fit: cover;
   border-radius: 15px;
   margin-top: 200px;
+  margin-bottom: 15px;
 }
 
 h3 {
@@ -189,6 +195,8 @@ h3 {
 }
 
 .feat-header {
+  cursor: pointer;
+  transition: all 0.3s ease;
   animation: fadeUp 2s ease;
   display: block;
   background: linear-gradient(90deg, #5d5e3645, #c67700);
@@ -203,10 +211,26 @@ h3 {
   margin-top: 150px;
 }
 
-.icon:hover,
-.assets-icon:hover{
+.feat-header:hover {
   transform: translateY(-10px);
   box-shadow: 10px 10px 30px rgb(125, 71, 9);
+}
+
+.feat-icon:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 30px rgb(125, 71, 9);
+}
+
+.footer__section {
+  background-color: #6e561d;
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.foot-links {
 }
 
 /* Phones */
