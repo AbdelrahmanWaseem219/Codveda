@@ -29,7 +29,7 @@ header {
 .logo {
   cursor: pointer;
   width: 120px;
-  height: 50px; 
+  height: auto;
 }
 
 .nav__links {
@@ -46,7 +46,7 @@ header {
 }
 
 .nav__links li a:hover {
-  color: #a97100;
+  color: #a97100 !important;
 }
 
 .text {
@@ -230,7 +230,9 @@ h3 {
   margin-bottom: 40px;
 }
 
-.foot-links {
+.links {
+  list-style: none;
+  padding: 0;
 }
 
 /* Phones */

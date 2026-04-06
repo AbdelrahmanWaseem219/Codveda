@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Internova</title>
+
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon.png" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="64x64" href="Images/favicon.png" />
+    <title>Internova</title>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/32ca9bf6db.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="hrnv-section">
       <header class="navbar__section">
-        <img class="logo" src="svgs/logo.svg" alt="logo" />
+        <img class="logo" src="svgs/IN logo.svg" alt="logo" />
         <nav>
           <ul class="nav__links">
             <li><a>Home</a></li>
@@ -23,6 +25,7 @@
         </nav>
         <a class="cta"><button class="btn-grad">Contact Us</button></a>
       </header>
+
       <div class="hero__section">
         <div class="text">
           <h1>A Great Place<span class="highlight">To Start</span></h1>
@@ -57,19 +60,42 @@
         <h3>Assets Made Just For You!</h3>
       </div>
     </div>
-
-    <div class="footer__section">
-      <img class="logo" src="svgs/logo.svg" alt="logo" />
-      <p Where your career journey begins.></p>
-
-      <div class="foot-links">
-        <ul class="links">
-          <li>Get started</li>
-          <li>About</li>
-          <li>Help</li>
-          <li>Features</li>
-        </ul>
+    <!-- Footer-Section -->
+    <footer>
+      <div class="row">
+        <div class="header-col">
+          <img src="svgs/IN logo.svg" class="footer-logo" />
+          <p>
+            Helping students start their career journey with real opportunities.
+          </p>
+        </div>
+        <div class="feat-col">
+          <h3>Features</h3>
+          <p>Internships</p>
+          <p>Learning Paths</p>
+          <p>Projects</p>
+        </div>
+        <div class="links-col">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="Services">Services</a></li>
+            <li><a href="About">About Us</a></li>
+            <li><a href="Features">Features</a></li>
+            <li><a href="Contacts">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="news-col">
+          <h3>Newsletter</h3>
+          <form>
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right fa-fade"></i>
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
