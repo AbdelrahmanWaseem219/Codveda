@@ -1,9 +1,12 @@
+/* make generic classes for colors,buttons,etc..
+   less code = more performance and maintaince
+*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
 html {
   scroll-behavior: smooth;
 }
 
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -32,36 +35,29 @@ header {
   height: auto;
 }
 
-.nav__links {
+.nav-links {
   list-style: none;
 }
 
-.nav__links li {
+.nav-links li {
   display: inline-block;
   padding: 0px 20px;
 }
 
-.nav__links li a {
+.nav-links li a {
   transition: all 0.3s ease 0s;
 }
 
-.nav__links li a:hover {
+.nav-links li a:hover {
   color: #a97100 !important;
 }
 
 .text {
   margin-bottom: 200px;
 }
-.btn-grad {
-  background-image: linear-gradient(
-    to right,
-    #403b4a 0%,
-    #e7e9bb 51%,
-    #403b4a 100%
-  );
-}
 
-.btn-grad {
+
+.btn-grad,.getstarted {
   margin: 10px;
   padding: 15px 45px;
   text-align: center;
@@ -75,7 +71,7 @@ header {
   border: none;
 }
 
-.btn-grad:hover {
+.btn-grad:hover,.getstarted:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
@@ -98,13 +94,13 @@ h2 {
   margin-left: 10px;
 }
 .hrnv-section {
-  background-image: url(Images/mario-gogh-VBLHICVh-lI-unsplash\ \(1\).jpg);
+  background-image: url(assets/Images/mario-gogh-VBLHICVh-lI-unsplash\ \(1\).jpg);
   background-position: center;
   background-size: cover;
   max-width: 100%;
   height: 100vh;
 }
-.hero__section {
+.hero-section {
   animation: fadeUp 2s ease;
   height: 100vh;
   display: flex;
@@ -123,7 +119,7 @@ h2 {
     transform: translateY(0);
   }
 }
-.hero__section p {
+.hero-section p {
   font-weight: bold;
   text-align: center;
   color: #f8f5f5;
@@ -131,37 +127,20 @@ h2 {
   line-height: 30px;
 }
 
-.getstarted {
+.getstarted,.btn-grad {
   background-image: linear-gradient(
     to right,
     #403b4a 0%,
-    #e7e9bb 51%,
+    #735b14 51%,
     #403b4a 100%
   );
 }
 
 .getstarted {
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  border-radius: 10px;
-  display: block;
-  outline: none;
-  border: none;
   transform: translateY(-100px);
 }
 
-.getstarted:hover {
-  background-position: right center;
-  color: #fff;
-  text-decoration: none;
-}
-
-.features__section {
+.features-section {
   animation: fadeUp 2s ease;
   display: flex;
   justify-content: center;
@@ -221,18 +200,102 @@ h3 {
   box-shadow: 10px 10px 30px rgb(125, 71, 9);
 }
 
-.footer__section {
+.footer-head {
   background-color: #6e561d;
   margin-top: 200px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 100px;
   margin-bottom: 40px;
 }
 
-.links {
+footer {
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to right, #d5d2cf, #4c2d0a);
+  color: #fff;
+  padding: 100px 0px 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+footer p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+.footer-logo {
+  width: 120px;
+  margin-bottom: 0px;
+}
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.header-col {
+  flex-basis: 20%;
+  padding: 10px;
+}
+
+.feat-col p {
+  line-height: 40px;
+}
+
+.feat-col h3 {
+  font-size: large;
+  color: white;
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.links-col h3 {
+  color: white;
+}
+
+ul li {
   list-style: none;
-  padding: 0;
+  margin-bottom: 12px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.news-col h3 {
+  color: white;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+form .fa-regular {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: none;
+  outline: none;
 }
 
 /* Phones */
